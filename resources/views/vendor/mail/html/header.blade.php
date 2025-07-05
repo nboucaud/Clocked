@@ -2,10 +2,10 @@
 <tr>
 <td class="header">
 <a href="{{ $url }}" style="display: inline-block;">
-@if(trim($slot) === 'solidtime')
-<img src="{{ asset('images/solidtime-logo.png') }}" srcset="{{ asset('images/solidtime-logo.svg') }}" class="logo" alt="solidtime Logo">
+@if(strtolower(trim($slot)) === 'infogito')
+    <img src="{{ asset('favicons/brand_logo_infogito_1.png') }}" class="logo" alt="Infogito Logo">
 @else
-{{ $slot }}
+    {{ $slot }}
 @endif
 </a>
 </td>

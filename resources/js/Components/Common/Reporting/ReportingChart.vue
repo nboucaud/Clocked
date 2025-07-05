@@ -167,11 +167,7 @@ const option = computed(() => ({
 
 <template>
     <div class="w-[calc(100%-1px)]">
-        <v-chart
-            v-if="groupedData && groupedData?.length > 0"
-            ref="chart"
-            :autoresize="true"
-            class="chart"
+        <v-chart v-if="groupedData && groupedData?.length > 0" ref="chart" :autoresize="true" class="chart"
             :option="option" />
         <div v-else class="chart flex flex-col items-center justify-center">
             <p class="text-lg text-text-primary font-semibold">
