@@ -40,7 +40,7 @@ const page = usePage<{
 
     <AuthenticationCard>
         <template #logo>
-            <img src="/favicons/brand_logo_infogito_1.png" alt="Logo" class="h-32 mix-blend-multiply" />
+            <img src="/favicons/brand_logo_infogito_1.png" alt="Logo" class="h-16 mix-blend-multiply" />
             <!-- <AuthenticationCardLogo /> -->
         </template>
 
