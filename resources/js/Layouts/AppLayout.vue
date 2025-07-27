@@ -101,7 +101,7 @@ const page = usePage<{
 <template>
     <div v-bind="$attrs" class="flex flex-wrap bg-background text-text-secondary">
         <div :class="{
-            '!flex bg-default-background w-full z-[9999999999]':
+            '!flex bg-black w-full z-[9999999999]':
                 showSidebarMenu,
         }"
             class="flex-shrink-0 h-screen hidden fixed w-[230px] 2xl:w-[250px] px-2.5 2xl:px-3 py-4 lg:flex flex-col justify-between">
@@ -114,8 +114,8 @@ const page = usePage<{
                     <CurrentSidebarTimer></CurrentSidebarTimer>
                 </div>
                 <div class="overflow-y-scroll flex-1 w-full" style="
-                        scrollbar-width: thin;
-                        scrollbar-color: var(--color-bg-primary) transparent;
+                        scrollbar-width: thin;           
+                        scrollbar-color: #0A0C0D transparent;
                     ">
                     <nav class="pt-2">
                         <ul>
@@ -220,10 +220,10 @@ const page = usePage<{
             <Banner />
             <BillingBanner v-if="isBillingActivated()" />
 
-            <div class="min-h-screen flex flex-col bg-default-background border border-black">
+            <div class="min-h-screen flex flex-col bg-black border border-black">
                 <!-- Page Heading -->
                 <header v-if="$slots.header"
-                    class="bg-default-background border-b border-default-background-separator shadow">
+                    class="bg-black border-b border-default-background-separator shadow">
                     <div class="pt-8 pb-3">
                         <MainContainer>
                             <slot name="header" />

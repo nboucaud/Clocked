@@ -28,7 +28,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
       class="fixed inset-0 z-50 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
     >
     <div
-                            class="absolute inset-0 bg-default-background opacity-30" />
+                            class="absolute inset-0 bg-black opacity-30" />
 </DialogOverlay>
     <DialogContent
       v-bind="forwarded"
@@ -40,7 +40,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     >
     <div
 :class="cn(
-          'bg-default-background grid w-full max-w-lg border shadow-lg duration-200 sm:rounded-lg',
+          'bg-black grid w-full max-w-lg border shadow-lg duration-200 sm:rounded-lg',
           props.class,
         )"
       >

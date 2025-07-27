@@ -10,7 +10,7 @@
 </head>
 <body class="passport-authorize">
 <div
-    class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-default-background text-white">
+    class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-black text-white">
     <div>
         <svg
             class="h-12 py-2"
